@@ -15,6 +15,7 @@ export declare class ModalComponent extends React.PureComponent<IModalProps, IMo
         removeClippedSubviews: boolean;
         selectPlaceholderText: string;
         searchPlaceholderText: string;
+        autoFocus: boolean;
         autoSort: boolean;
         items: any[];
         disabled: boolean;

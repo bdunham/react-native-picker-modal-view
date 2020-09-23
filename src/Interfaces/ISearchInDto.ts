@@ -9,5 +9,6 @@ export interface ISearch {
 	setText: (text: string) => void;
 	searchText: string;
 	SearchInputProps?: TextInputProps;
-	backButtonDisabled?: boolean
+	backButtonDisabled?: boolean;
+  autoFocus: boolean;
 }

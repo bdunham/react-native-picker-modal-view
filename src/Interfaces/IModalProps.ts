@@ -37,6 +37,7 @@ export interface IModalProps {
 	SearchInputProps?: TextInputProps;
 	ModalProps?: ModalProps;
 	autoSort?: boolean;
+	autoFocus?: boolean;
 	disabled: boolean;
 	requireSelection: boolean;
 	renderListItem?: (selectedItem: IModalListInDto, listItem: IModalListInDto) => JSX.Element

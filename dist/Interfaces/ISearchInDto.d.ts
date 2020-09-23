@@ -8,4 +8,5 @@ export interface ISearch {
     searchText: string;
     SearchInputProps?: TextInputProps;
     backButtonDisabled?: boolean;
+    autoFocus: boolean;
 }
