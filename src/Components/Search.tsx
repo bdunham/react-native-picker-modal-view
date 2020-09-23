@@ -21,7 +21,7 @@ export class SearchComponent extends React.PureComponent<ISearch, {}> {
 					style={[SearchStyle.textInput, forceSelect && SearchStyle.nonCloseButton, backButtonDisabled && SearchStyle.nonBackButton]}
 					underlineColorAndroid={'transparent'}
 					onChangeText={(text: string) => setText(text)}
-					autoFocus={autoFocus}
+					autoFocus={true}
 					{...SearchInputProps}
 				/>
 				{!forceSelect &&

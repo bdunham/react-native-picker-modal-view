@@ -7,7 +7,7 @@ export class SearchComponent extends React.PureComponent {
         return (React.createElement(View, { style: SearchStyle.searchArea },
             !backButtonDisabled &&
                 this.touchableOpacityButton(onBackRequest, require('../Assets/Images/left-arrow.png'), SearchStyle.leftBtn, SearchStyle.backButton),
-            React.createElement(TextInput, Object.assign({ placeholder: searchText, placeholderTextColor: placeholderTextColor, style: [SearchStyle.textInput, forceSelect && SearchStyle.nonCloseButton, backButtonDisabled && SearchStyle.nonBackButton], underlineColorAndroid: 'transparent', onChangeText: (text) => setText(text), autoFocus: autoFocus }, SearchInputProps)),
+            React.createElement(TextInput, Object.assign({ placeholder: searchText, placeholderTextColor: placeholderTextColor, style: [SearchStyle.textInput, forceSelect && SearchStyle.nonCloseButton, backButtonDisabled && SearchStyle.nonBackButton], underlineColorAndroid: 'transparent', onChangeText: (text) => setText(text), autoFocus: true }, SearchInputProps)),
             !forceSelect &&
                 this.touchableOpacityButton(onClose, require('../Assets/Images/close.png'), SearchStyle.leftBtn, SearchStyle.closeButton)));
     }
